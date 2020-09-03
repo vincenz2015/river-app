@@ -46,7 +46,7 @@
           </div>
         </div>
       </section>
-      <section class="section" id="three">
+      <section class="section" id="third">
         <div class="row">
           <div class="col-md-5 col-sm-12">
             <div class="flex">
@@ -69,7 +69,7 @@
                   <el-date-picker
                     type="date"
                     placeholder="Pick a day"
-                    v-model="form.date1"
+                    v-model="form.date"
                     style="width: 100%;"
                   ></el-date-picker>
                 </el-col>
@@ -77,7 +77,8 @@
                 <el-col :span="11">
                   <el-time-picker
                     placeholder="Select a time"
-                    v-model="form.date2"
+                    :picker-options="{format: 'HH:mm'}"
+                    v-model="form.time"
                     style="width: 100%;"
                   ></el-time-picker>
                 </el-col>
@@ -86,12 +87,39 @@
                 <el-input type="textarea" v-model="form.message"></el-input>
               </el-form-item>
               <el-form-item>
-                <el-button type="primary" @click="submitForm('ruleForm')">Place Booking</el-button>
+                <el-button type="primary" @click="submitForm()">Place Booking</el-button>
               </el-form-item>
             </el-form>
+            <div v-if="validationErrors">
+              <el-alert title="Form error" type="error" :description="validationErrors"></el-alert>
+            </div>
           </div>
         </div>
       </section>
+      <section class="section" id="bookings">
+        <div v-if="currentBookings">
+          <div class="row">
+            <div
+              v-for="(value, propertyName, index) in currentBookings"
+              class="booking-item col-md-4 col-sm-12 flex"
+            >
+              <div class="indent d-none d-sm-none d-md-block">______</div>
+              <div class="content">
+                <div class="number">02</div>
+                <div class="booking-title">
+                  <div class="booking-name">{{ value.name }}</div>
+                  <div class="booking-date">{{ value.date }}</div>
+                  <div class="booking-time">{{ value.time }}</div>
+                  <div class="booking-message">{{ value.message }}</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div id="watermark">
+        <img src="images/river_wave.svg" />
+      </div>
     </div>
     <section class="section" id="footer">
       <div class="row f-header">
@@ -111,16 +139,71 @@ export default {
     return {
       form: {
         name: "",
-        date1: "",
-        date2: "",
+        date: "",
+        time: "",
         message: "",
       },
+      currentBookings: {},
+      validationErrors: "",
     };
+  },
+  mounted() {
+    this.init();
+  },
+  methods: {
+    init() {
+      this.getBookings();
+    },
+    getBookings() {
+      let self = this;
+      axios.get("/bookings").then(function (response) {
+        self.currentBookings = response.data;
+      });
+    },
+    getErrors(err) {
+      let errors = Object.values(err);
+      errors = errors.flat()[0];
+      return errors;
+    },
+    afterFormSubmit(response) {
+      if (response.status == 200) {
+        console.log(response);
+      }
+    },
+    afterFormSubmitError(error) {
+      if (error.response.status == 422) {
+        this.validationErrors = this.getErrors(error.response.data.errors);
+      }
+    },
+
+    submitForm() {
+      this.validationErrors = "";
+      let formData = this.form;
+      let self = this;
+      axios
+        .post("/bookings", {
+          name: formData.name,
+          date: formData.date,
+          time: formData.time,
+          message: formData.message,
+        })
+        .then(function (response) {
+          self.afterFormSubmit(response);
+        })
+        .catch(function (error) {
+          self.afterFormSubmitError(error);
+        });
+    },
   },
 };
 </script>
 <style>
 /* Global */
+#watermark {
+  position: absolute;
+  bottom: 50px;
+  right: 80px;
+}
 /* Form */
 .el-button--primary {
   background-color: #000 !important;
@@ -136,6 +219,7 @@ p {
 }
 .page {
   padding: 12vw;
+  position: relative;
 }
 .flex {
   display: flex;
@@ -156,12 +240,34 @@ h1 {
   font-weight: 300;
   font-size: 28px;
 }
+.booking-item {
+  padding-bottom: 80px;
+}
+.booking-title {
+  color: #000;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+}
+.booking-message {
+  margin-top: 30px;
+  color: #000;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
 .number {
   font-size: 16px;
   color: #9a9a9a;
 }
 .el-button span {
   padding: 5px 50px;
+}
+.indent {
+  text-align: right;
+  width: 95px;
+  margin-top: 90px;
+  padding-right: 30px;
 }
 </style>
 </style>
@@ -195,10 +301,6 @@ h1 {
   color: #fff;
   text-shadow: 0px 3px 6px #00000029;
 }
-.indent {
-  margin-top: 90px;
-  padding-right: 30px;
-}
 
 #second .hero-image {
   max-width: 690px;
@@ -207,6 +309,12 @@ h1 {
 #second .indent {
   margin-top: 60px;
 }
+#third .indent {
+  margin-top: 105px;
+}
+#bookings .indent {
+  margin-top: 136px;
+}
 #footer {
   padding: 80px 50px 150px 150px;
   background-color: #000;
@@ -214,5 +322,4 @@ h1 {
 #footer .f-header {
   color: #fff;
 }
-
 </style>
