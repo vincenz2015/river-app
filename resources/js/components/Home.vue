@@ -123,12 +123,42 @@
     </div>
     <section class="section" id="footer">
       <div class="row f-header">
-        <div class="col-md col-sm-12">*</div>
-        <div class="col-md col-sm-12">MENU</div>
-        <div class="col-md col-sm-12">MENU</div>
-        <div class="col-md col-sm-12">MENU</div>
-        <div class="col-md col-sm-12">MENU</div>
+        <div class="col-md col-sm-12">
+          <img src="images/river_logo.svg" />
+          <p
+            class="footer-text"
+          >Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.</p>
+          <p class="underline">BOOK NOW</p>
+        </div>
+        <div class="col-md col-sm-12"></div>
+        <div class="col-md col-sm-12">
+          MENU
+          <div class="footer-link">Heading</div>
+          <div class="footer-link">Heading</div>
+          <div class="footer-link">Heading</div>
+          <div class="footer-link">Heading</div>
+        </div>
+        <div class="col-md col-sm-12">
+          MENU
+          <div class="footer-link">Heading</div>
+          <div class="footer-link">Heading</div>
+          <div class="footer-link">Heading</div>
+        </div>
+        <div class="col-md col-sm-12">
+          MENU
+          <div class="footer-link">Heading</div>
+          <div class="footer-link">Heading</div>
+          <div class="footer-link">Heading</div>
+        </div>
+        <div class="col-md col-sm-12">
+          MENU
+          <div class="footer-link">Heading</div>
+          <div class="footer-link">Heading</div>
+          <div class="footer-link">Heading</div>
+        </div>
+        <div class="col-md col-sm-12"></div>
       </div>
+      <div class="footer-text pt-50">© 2019 RIVER. All Rights Reserved.</div>
     </section>
   </div>
 </template>
@@ -167,10 +197,10 @@ export default {
     },
     afterFormSubmit(response) {
       if (response.status == 200) {
-         this.$notify({
-          title: 'Success',
-          message: 'The booking was successfully submitted',
-          type: 'success'
+        this.$notify({
+          title: "Success",
+          message: "The booking was successfully submitted",
+          type: "success",
         });
         this.getBookings();
         console.log(response);
@@ -219,6 +249,11 @@ body {
 }
 p {
   padding-top: 30px;
+}
+.underline {
+  text-decoration: underline;
+  text-underline-position: under;
+  letter-spacing: 3px;
 }
 .section {
   padding-top: 10vw;
@@ -322,10 +357,17 @@ h1 {
   margin-top: 136px;
 }
 #footer {
-  padding: 80px 50px 150px 150px;
+  padding: 80px 50px 120px 150px;
   background-color: #000;
 }
 #footer .f-header {
   color: #fff;
+}
+#footer .footer-text {
+  color: #ffffff60;
+}
+#footer .footer-link {
+  padding-top: 12px;
+  color: #ffffff60;
 }
 </style>

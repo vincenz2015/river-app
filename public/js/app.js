@@ -3701,6 +3701,36 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -3735,9 +3765,9 @@ __webpack_require__.r(__webpack_exports__);
     afterFormSubmit: function afterFormSubmit(response) {
       if (response.status == 200) {
         this.$notify({
-          title: 'Success',
-          message: 'The booking was successfully submitted',
-          type: 'success'
+          title: "Success",
+          message: "The booking was successfully submitted",
+          type: "success"
         });
         this.getBookings();
         console.log(response);
@@ -10042,7 +10072,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/* Global */\n#watermark {\n  position: absolute;\n  bottom: 50px;\n  right: 80px;\n}\n/* Form */\n.el-button--primary {\n  background-color: #000 !important;\n}\nbody {\n  font-family: \"Montserrat\", sans-serif;\n}\np {\n  padding-top: 30px;\n}\n.section {\n  padding-top: 10vw;\n}\n.page {\n  padding: 12vw;\n  position: relative;\n}\n.flex {\n  display: flex;\n}\nh1 {\n  font-size: 30px;\n  font-weight: 600;\n  text-transform: uppercase;\n}\n.pt-50 {\n  padding-top: 50px;\n}\n.pt-110 {\n  padding-top: 110px;\n}\n.text-medium {\n  font-family: \"Montserrat\", sans-serif;\n  font-weight: 300;\n  font-size: 28px;\n}\n.booking-item {\n  padding-bottom: 80px;\n}\n.booking-title {\n  color: #000;\n  font-family: \"Montserrat\", sans-serif;\n  font-weight: 300;\n  font-size: 18px;\n}\n.booking-message {\n  margin-top: 30px;\n  color: #000;\n  font-family: \"Montserrat\", sans-serif;\n  font-weight: 400;\n  font-size: 16px;\n}\n.number {\n  font-size: 16px;\n  color: #9a9a9a;\n}\n.el-button span {\n  padding: 5px 50px;\n}\n.indent {\n  text-align: right;\n  width: 95px;\n  margin-top: 90px;\n  padding-right: 30px;\n}\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/* Global */\n#watermark {\n  position: absolute;\n  bottom: 50px;\n  right: 80px;\n}\n/* Form */\n.el-button--primary {\n  background-color: #000 !important;\n}\nbody {\n  font-family: \"Montserrat\", sans-serif;\n}\np {\n  padding-top: 30px;\n}\n.underline {\n  text-decoration: underline;\n  text-underline-position: under;\n  letter-spacing: 3px;\n}\n.section {\n  padding-top: 10vw;\n}\n.page {\n  padding: 12vw;\n  position: relative;\n}\n.flex {\n  display: flex;\n}\nh1 {\n  font-size: 30px;\n  font-weight: 600;\n  text-transform: uppercase;\n}\n.pt-50 {\n  padding-top: 50px;\n}\n.pt-110 {\n  padding-top: 110px;\n}\n.text-medium {\n  font-family: \"Montserrat\", sans-serif;\n  font-weight: 300;\n  font-size: 28px;\n}\n.booking-item {\n  padding-bottom: 80px;\n}\n.booking-title {\n  color: #000;\n  font-family: \"Montserrat\", sans-serif;\n  font-weight: 300;\n  font-size: 18px;\n}\n.booking-message {\n  margin-top: 30px;\n  color: #000;\n  font-family: \"Montserrat\", sans-serif;\n  font-weight: 400;\n  font-size: 16px;\n}\n.number {\n  font-size: 16px;\n  color: #9a9a9a;\n}\n.el-button span {\n  padding: 5px 50px;\n}\n.indent {\n  text-align: right;\n  width: 95px;\n  margin-top: 90px;\n  padding-right: 30px;\n}\n", ""]);
 
 // exports
 
@@ -10061,7 +10091,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.header-bg[data-v-f2b6376c] {\n  display: flex;\n  align-items: center;\n  width: 100%;\n  height: 150vh;\n  max-height: 960px;\n  background-image: url(\"/images/topbg.jpg\");\n  background-size: cover;\n}\n@media (max-width: 576px) {\n.header-bg[data-v-f2b6376c] {\n    height: 80vh;\n}\n}\n.header-logo[data-v-f2b6376c] {\n  position: absolute;\n  align-self: flex-start;\n  padding: 50px 0 0 50px;\n}\n.header-text[data-v-f2b6376c] {\n  margin: 0 auto;\n  font-family: Montserrat;\n  font-weight: bold;\n  font-size: 5.5vw;\n  text-transform: uppercase;\n  letter-spacing: 9.8px;\n  color: #fff;\n  text-shadow: 0px 3px 6px #00000029;\n}\n#second .hero-image[data-v-f2b6376c] {\n  max-width: 690px;\n  width: 100%;\n}\n#second .indent[data-v-f2b6376c] {\n  margin-top: 60px;\n}\n#third .indent[data-v-f2b6376c] {\n  margin-top: 105px;\n}\n#bookings .indent[data-v-f2b6376c] {\n  margin-top: 136px;\n}\n#footer[data-v-f2b6376c] {\n  padding: 80px 50px 150px 150px;\n  background-color: #000;\n}\n#footer .f-header[data-v-f2b6376c] {\n  color: #fff;\n}\n", ""]);
+exports.push([module.i, "\n.header-bg[data-v-f2b6376c] {\n  display: flex;\n  align-items: center;\n  width: 100%;\n  height: 150vh;\n  max-height: 960px;\n  background-image: url(\"/images/topbg.jpg\");\n  background-size: cover;\n}\n@media (max-width: 576px) {\n.header-bg[data-v-f2b6376c] {\n    height: 80vh;\n}\n}\n.header-logo[data-v-f2b6376c] {\n  position: absolute;\n  align-self: flex-start;\n  padding: 50px 0 0 50px;\n}\n.header-text[data-v-f2b6376c] {\n  margin: 0 auto;\n  font-family: Montserrat;\n  font-weight: bold;\n  font-size: 5.5vw;\n  text-transform: uppercase;\n  letter-spacing: 9.8px;\n  color: #fff;\n  text-shadow: 0px 3px 6px #00000029;\n}\n#second .hero-image[data-v-f2b6376c] {\n  max-width: 690px;\n  width: 100%;\n}\n#second .indent[data-v-f2b6376c] {\n  margin-top: 60px;\n}\n#third .indent[data-v-f2b6376c] {\n  margin-top: 105px;\n}\n#bookings .indent[data-v-f2b6376c] {\n  margin-top: 136px;\n}\n#footer[data-v-f2b6376c] {\n  padding: 80px 50px 120px 150px;\n  background-color: #000;\n}\n#footer .f-header[data-v-f2b6376c] {\n  color: #fff;\n}\n#footer .footer-text[data-v-f2b6376c] {\n  color: #ffffff60;\n}\n#footer .footer-link[data-v-f2b6376c] {\n  padding-top: 12px;\n  color: #ffffff60;\n}\n", ""]);
 
 // exports
 
@@ -100793,15 +100823,63 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("section", { staticClass: "section", attrs: { id: "footer" } }, [
       _c("div", { staticClass: "row f-header" }, [
-        _c("div", { staticClass: "col-md col-sm-12" }, [_vm._v("*")]),
+        _c("div", { staticClass: "col-md col-sm-12" }, [
+          _c("img", { attrs: { src: "images/river_logo.svg" } }),
+          _vm._v(" "),
+          _c("p", { staticClass: "footer-text" }, [
+            _vm._v(
+              "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy."
+            )
+          ]),
+          _vm._v(" "),
+          _c("p", { staticClass: "underline" }, [_vm._v("BOOK NOW")])
+        ]),
         _vm._v(" "),
-        _c("div", { staticClass: "col-md col-sm-12" }, [_vm._v("MENU")]),
+        _c("div", { staticClass: "col-md col-sm-12" }),
         _vm._v(" "),
-        _c("div", { staticClass: "col-md col-sm-12" }, [_vm._v("MENU")]),
+        _c("div", { staticClass: "col-md col-sm-12" }, [
+          _vm._v("\n        MENU\n        "),
+          _c("div", { staticClass: "footer-link" }, [_vm._v("Heading")]),
+          _vm._v(" "),
+          _c("div", { staticClass: "footer-link" }, [_vm._v("Heading")]),
+          _vm._v(" "),
+          _c("div", { staticClass: "footer-link" }, [_vm._v("Heading")]),
+          _vm._v(" "),
+          _c("div", { staticClass: "footer-link" }, [_vm._v("Heading")])
+        ]),
         _vm._v(" "),
-        _c("div", { staticClass: "col-md col-sm-12" }, [_vm._v("MENU")]),
+        _c("div", { staticClass: "col-md col-sm-12" }, [
+          _vm._v("\n        MENU\n        "),
+          _c("div", { staticClass: "footer-link" }, [_vm._v("Heading")]),
+          _vm._v(" "),
+          _c("div", { staticClass: "footer-link" }, [_vm._v("Heading")]),
+          _vm._v(" "),
+          _c("div", { staticClass: "footer-link" }, [_vm._v("Heading")])
+        ]),
         _vm._v(" "),
-        _c("div", { staticClass: "col-md col-sm-12" }, [_vm._v("MENU")])
+        _c("div", { staticClass: "col-md col-sm-12" }, [
+          _vm._v("\n        MENU\n        "),
+          _c("div", { staticClass: "footer-link" }, [_vm._v("Heading")]),
+          _vm._v(" "),
+          _c("div", { staticClass: "footer-link" }, [_vm._v("Heading")]),
+          _vm._v(" "),
+          _c("div", { staticClass: "footer-link" }, [_vm._v("Heading")])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-md col-sm-12" }, [
+          _vm._v("\n        MENU\n        "),
+          _c("div", { staticClass: "footer-link" }, [_vm._v("Heading")]),
+          _vm._v(" "),
+          _c("div", { staticClass: "footer-link" }, [_vm._v("Heading")]),
+          _vm._v(" "),
+          _c("div", { staticClass: "footer-link" }, [_vm._v("Heading")])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-md col-sm-12" })
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "footer-text pt-50" }, [
+        _vm._v("© 2019 RIVER. All Rights Reserved.")
       ])
     ])
   }
