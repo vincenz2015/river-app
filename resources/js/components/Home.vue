@@ -167,6 +167,12 @@ export default {
     },
     afterFormSubmit(response) {
       if (response.status == 200) {
+         this.$notify({
+          title: 'Success',
+          message: 'The booking was successfully submitted',
+          type: 'success'
+        });
+        this.getBookings();
         console.log(response);
       }
     },

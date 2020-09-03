@@ -3734,6 +3734,12 @@ __webpack_require__.r(__webpack_exports__);
     },
     afterFormSubmit: function afterFormSubmit(response) {
       if (response.status == 200) {
+        this.$notify({
+          title: 'Success',
+          message: 'The booking was successfully submitted',
+          type: 'success'
+        });
+        this.getBookings();
         console.log(response);
       }
     },
@@ -10036,7 +10042,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/* Global */\n#watermark {\n  position: absolute;\n  bottom: 50px;\n  right: 80px;\n}\n/* Form */\n.el-button--primary {\n  background-color: #000 !important;\n}\nbody {\n  font-family: \"Montserrat\", sans-serif;\n}\np {\n  padding-top: 30px;\n}\n.section {\n  padding-top: 10vw;\n}\n.page {\n  padding: 12vw;\n  position: relative;\n}\n.flex {\n  display: flex;\n}\nh1 {\n  font-size: 30px;\n  font-weight: 600;\n  text-transform: uppercase;\n}\n.pt-50 {\n  padding-top: 50px;\n}\n.pt-110 {\n  padding-top: 110px;\n}\n.text-medium {\n  font-family: \"Montserrat\", sans-serif;\n  font-weight: 300;\n  font-size: 28px;\n}\n.booking-item {\n  padding-bottom: 80px;\n}\n.booking-title {\n  color: #000;\n  font-family: \"Montserrat\", sans-serif;\n  font-weight: 300;\n  font-size: 18px;\n}\n.booking-message {\n  margin-top: 30px;\n  color: #000;\n  font-family: \"Montserrat\", sans-serif;\n  font-weight: 400;\n  font-size: 16px;\n}\n.number {\n  font-size: 16px;\n  color: #9a9a9a;\n}\n.el-button span {\n  padding: 5px 50px;\n}\n.indent {\n  text-align: right;\n  width: 95px;\n  margin-top: 90px;\n  padding-right: 30px;\n}\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/* Global */\n#watermark {\n  position: absolute;\n  bottom: 50px;\n  right: 80px;\n}\n/* Form */\n.el-button--primary {\n  background-color: #000 !important;\n}\nbody {\n  font-family: \"Montserrat\", sans-serif;\n}\np {\n  padding-top: 30px;\n}\n.section {\n  padding-top: 10vw;\n}\n.page {\n  padding: 12vw;\n  position: relative;\n}\n.flex {\n  display: flex;\n}\nh1 {\n  font-size: 30px;\n  font-weight: 600;\n  text-transform: uppercase;\n}\n.pt-50 {\n  padding-top: 50px;\n}\n.pt-110 {\n  padding-top: 110px;\n}\n.text-medium {\n  font-family: \"Montserrat\", sans-serif;\n  font-weight: 300;\n  font-size: 28px;\n}\n.booking-item {\n  padding-bottom: 80px;\n}\n.booking-title {\n  color: #000;\n  font-family: \"Montserrat\", sans-serif;\n  font-weight: 300;\n  font-size: 18px;\n}\n.booking-message {\n  margin-top: 30px;\n  color: #000;\n  font-family: \"Montserrat\", sans-serif;\n  font-weight: 400;\n  font-size: 16px;\n}\n.number {\n  font-size: 16px;\n  color: #9a9a9a;\n}\n.el-button span {\n  padding: 5px 50px;\n}\n.indent {\n  text-align: right;\n  width: 95px;\n  margin-top: 90px;\n  padding-right: 30px;\n}\n", ""]);
 
 // exports
 
